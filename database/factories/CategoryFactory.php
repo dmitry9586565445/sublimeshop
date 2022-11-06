@@ -13,7 +13,7 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => $this->faker->word,
-            'slug' => $this->faker->unique->word . now()->format('YmdHis')
+            'slug' => $this->faker->unique->word . now()->format('YmdHisUu')
         ];
     }
 }
